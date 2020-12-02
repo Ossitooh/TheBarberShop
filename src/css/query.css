@@ -1,0 +1,359 @@
+@media only screen and (max-width: 1024px) {
+    header {
+        background-attachment: unset;
+    }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+
+    .flex-container {
+        flex-wrap: wrap;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        height: 100%;
+        width: 50%;
+        position: fixed;
+        top: 0;
+        right: 0;
+        background: #555;
+        justify-content: space-evenly;
+        align-items: center;
+
+        clip-path: circle(0 at top right);
+        transition: all ease-in-out 500ms;
+    }
+
+    .navbar-toggle {
+        background-position: center;
+        padding: 12px;
+        background-repeat: no-repeat;
+        border: none;
+        background-color: transparent;
+        display: inline-block;
+    }
+
+    .site-nav--open {
+        clip-path: circle(150% at top right);
+    }
+
+    .open {
+        background-image: url(/src/img/haburger_icons/icon-hamburger.svg);
+    }
+
+    .close {
+        background-image: url(/src/img/haburger_icons/icon-close.svg);
+    }
+
+    .hidden {
+        display: inline-block;
+    }
+
+    .show {
+        
+        z-index: -1;
+    }
+
+    /* ------------------ */
+    /* Header */
+    header {
+        background-attachment: unset;
+    }
+
+    .hero-text-box {
+        width: 100%;
+    }
+
+    /* ------------------ */
+    /* About */ 
+    .about_info {
+        padding-left: 0px;
+        width: 50%;
+    }
+    
+    .large_img_1 img {
+        width: 80%;
+        height: 32vh;
+        margin-top: 41px;
+    }
+
+    .small_img_2 {
+        right: 60px;
+        left: auto;
+        top: 182px;
+        width: 50%;
+    }
+
+
+    .card_service {
+        width: 42%;
+    }
+
+    .card_service:last-child {
+        margin-top: 20px;
+    }
+
+    .service_content {
+        padding: 40px 28px;
+    }
+
+    /* ------------------ */
+    /* Team */ 
+    .space-between {
+        justify-content: center;
+    }
+
+    .single_team_member {
+        margin-bottom: 50px;
+    }
+
+    .single_team_member:last-child {
+        margin-bottom: 0px;
+    }
+}
+
+/* ///////////////////////////////////////////////////////// */
+@media only screen and (max-width: 769px) {
+    .container {
+        max-width: 740px;
+    }
+
+    .flex-container {
+        flex-wrap: wrap;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        height: 100%;
+        width: 50%;
+        position: fixed;
+        top: 0;
+        right: 0;
+        background: #555;
+        justify-content: space-evenly;
+        align-items: center;
+
+        clip-path: circle(0 at top right);
+        transition: all ease-in-out 500ms;
+        opacity: 0;
+
+        /* transition: ease-in; */
+    }
+
+    .active_btn.bg_none {
+        background-color: inherit;
+    }
+
+    .navbar-toggle {
+        background-position: center;
+        padding: 12px;
+        background-repeat: no-repeat;
+        border: none;
+        background-color: transparent;
+        display: inline-block;
+    }
+
+    .site-nav--open {
+        clip-path: circle(150% at top right);
+        opacity: 1;
+    }
+
+    .open {
+        background-image: url(/src/img/haburger_icons/icon-hamburger.svg);
+    }
+
+    .close {
+        background-image: url(/src/img/haburger_icons/icon-close.svg);
+    }
+
+    .hidden {
+        display: inline-block;
+    }
+
+    .show { 
+        z-index: -1;
+    }
+    
+    /* ------------------ */
+    /* Header */
+    header {
+        background-attachment: unset;
+    }
+
+    .hero-text-box {
+        width: 70%;
+        top: 46%;
+        transform: translate(-50%, -50%);
+    }
+
+    /* ------------------ */
+    /* Services */
+    .card-img img {
+        height: auto;
+    }
+}
+
+
+/* --------------------------------------- */
+/* Big Phones */
+/* --------------------------------------- */
+@media only screen and (max-width: 430px) {
+    body {
+        font-size: 14px;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    section {
+        padding: 60px;
+    }
+    
+    h2 {
+        font-size: 27px;
+    }
+
+    nav {
+        padding: 15px;
+    }
+
+    .logo img {
+        width: 30%;
+    }
+
+    /* ----------- */
+    /* Header */
+    .hero-text-box h1 {
+        font-size: 28px;
+    }
+
+    .hero-text-box p {
+        width: 90%;
+    }
+
+    /* ----------- */
+    /* About Us */
+    .img-container {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .large_img_1 img {
+        width: 100%;
+        height: 35vh;
+    }
+
+    .small_img_2 {
+        left: auto;
+        width: 55%;
+        top: 120px;
+    }
+
+    .about_info {
+        padding-left: 0px;
+        padding-top: 30px;
+    }
+
+
+    /* ----------- */
+    /* Our Services */
+    .title p {
+        font-size: 14px;
+        line-height: 25px;
+        width: 94%;
+    }
+
+    .service_content {
+        padding: 25px 18px;
+    }
+
+    .service_content p {
+        font-size: 12px;
+        line-height: 22px;
+    }
+
+    /* ----------- */
+    /* Pricing */ 
+
+    .pricing {
+        padding: 80px 0;
+    }
+
+    .pricing_title {
+        padding: 0 60px;
+    }
+    .pricing_title p {
+        font-size: 14px;
+        line-height: 25px;
+        width: 100%;
+    }
+
+    /* .glider-contain {
+        width: 100%;
+    } */
+
+    .glider-next, .glider-prev {
+        display: none;
+    }
+
+
+    /* ----------- */
+    /* Team */
+    .team_title p {
+        font-size: 14px;
+        line-height: 25px;
+        color: #7f7f7f;
+        font-weight: 400;
+        width: 94%;
+        margin: 0 auto;
+    }
+
+    .single_team_member {
+        margin-bottom: 35px;
+    }
+
+    .single_team_member:last-child {
+
+        margin-bottom: 0;
+    }
+
+    /* ----------- */
+    /* Testimonial */
+    .testimonial {
+        padding: 80px;
+    }
+
+    .single_testimonial p {
+        font-size: 14px;
+        line-height: 25px;
+        width: 90%;
+    }
+
+    .thumb img {
+        height: 55px;
+    }
+
+    .testimonial_author h3 {
+        font-size: 15px;
+        padding-bottom: 30px;
+    }
+
+    .contact_title {
+        padding-left: 0;
+    }
+
+    .contact_title h2 {
+        font-size: 24px;
+    }
+
+    .footer_title {
+        position: unset;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        font-size: 18px;
+    }
+
+
+}
